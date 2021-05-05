@@ -14,9 +14,9 @@ public class SellerDTO {
 		this.name = name;
 	}
 
-	public SellerDTO(Seller seller) {
-		id = seller.getId();
-		name = seller.getName();
+	public SellerDTO(Seller entity) {
+		id = entity.getId();
+		name = entity.getName();
 	}
 	
 	public Long getId() {
