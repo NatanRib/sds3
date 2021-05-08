@@ -1,10 +1,13 @@
 import {Link} from 'react-router-dom'
+import Footer from 'components/footer'
+import Appbar from 'components/appbar'
 
 const Home = () => {
     return (
         <>
+            <Appbar></Appbar>
             <div className="container">
-                <div className="jumbotron">
+                <div className="jumbotron bg-white">
                     <h1 className="display-4">DSVendas</h1>
                     <p className="lead">Analise o desempenho das suas vendas por diferentes perspectivas</p>
                     <hr />
@@ -12,6 +15,7 @@ const Home = () => {
                     <Link to='/dashboard' className='btn btn-primary btn-lg'>Acessar dashboard</Link>
                 </div>
             </div>
+            <Footer></Footer>
         </>
     )
 }
